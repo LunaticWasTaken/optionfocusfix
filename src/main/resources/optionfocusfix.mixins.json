@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "MixinParentElement"
+    "MixinContainerEventHandler"
   ],
   "injectors": {
     "defaultRequire": 1
