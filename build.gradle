@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.7-SNAPSHOT'
+    id 'fabric-loom' version '1.11-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -15,8 +15,8 @@ dependencies {
     /* Minecraft */
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
 
-    /* Yarn-Mappings */
-    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    /* Mojang-Mappings */
+    mappings loom.officialMojangMappings()
     /* Fabric-Loader */
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 }
